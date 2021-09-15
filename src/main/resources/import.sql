@@ -7,5 +7,5 @@ INSERT INTO courses (COURSE_NAME) VALUES ('Civil');
 INSERT INTO users (EMAIL,FIRST_NAME,LAST_NAME,PASSWORD,TYPE) VALUES ('RJ@gmail.com','Rinkesh','Jadav','1234','Admin');
 INSERT INTO users (EMAIL,FIRST_NAME,LAST_NAME,PASSWORD,TYPE) VALUES ('PP@gmail.com','Parth','Patel','1234','Student');
 
-insert into student_app_info (APP_COMMENT,APP_STATUS,JEE_MARKS,PER_TEN,PER_TWELVE,COURSE,USER,USER_NAME) VALUES ('','SUBMITED',100,80,80,'Computer Science',2,'Parth Patel');
+insert into student_app_info (APP_COMMENT,APP_STATUS,JEE_MARKS,PER_TEN,PER_TWELVE,COURSE,USER,USER_NAME) VALUES ('','SUBMITTED',100,80,80,'Computer Science',2,'Parth Patel');
 
