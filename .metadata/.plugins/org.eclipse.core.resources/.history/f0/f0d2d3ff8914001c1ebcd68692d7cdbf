@@ -1,0 +1,41 @@
+package com.example.collegemanagement.serviceimpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.collegemanagement.model.StudentAppInfo;
+import com.example.collegemanagement.model.Users;
+import com.example.collegemanagement.repository.AppInfoRepository;
+import com.example.collegemanagement.service.AppInfoService;
+
+@Service
+public class AppInfoServiceImpl implements AppInfoService {
+	
+	@Autowired
+	AppInfoRepository infoRepo;
+
+	@Override
+	public List<StudentAppInfo> getAllDetails() {
+		return infoRepo.findAll();
+	}
+
+	@Override
+	public StudentAppInfo getStudentDetail(Integer id) {
+	Optional<StudentAppInfo> user = infoRepo.findById(id);
+		
+		if(user.isPresent())
+			return user.get();
+		else
+		return null;
+	}
+
+	@Override
+	public Boolean saveDetail(StudentAppInfo student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

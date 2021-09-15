@@ -1,0 +1,28 @@
+package com.example.collegemanagement.serviceimpl;
+
+import java.util.List;
+
+import com.example.collegemanagement.model.StudentAppInfo;
+import com.example.collegemanagement.service.AppInfoService;
+
+public class AppInfoServiceImpl implements AppInfoService {
+
+	@Override
+	public List<StudentAppInfo> getAllDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StudentAppInfo getStudentDetail(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean saveDetail(StudentAppInfo student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

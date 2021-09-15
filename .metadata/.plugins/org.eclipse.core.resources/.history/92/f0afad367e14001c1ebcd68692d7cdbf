@@ -1,0 +1,14 @@
+package com.example.collegemanagement.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.collegemanagement.model.Users;
+
+@Service
+public interface UserService {
+	
+	public Boolean saveUser(Users user);
+	
+	public Users findUser(String email, String password);
+
+}

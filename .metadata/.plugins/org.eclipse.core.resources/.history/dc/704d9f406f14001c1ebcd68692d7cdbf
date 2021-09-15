@@ -1,0 +1,19 @@
+package com.example.collegemanagement.serviceimpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.collegemanagement.model.Users;
+import com.example.collegemanagement.repository.UserRepository;
+import com.example.collegemanagement.service.UserService;
+
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	UserRepository userRepo;
+
+	@Override
+	public void saveUser(Users user) {
+		userRepo.save(user);
+	}
+
+}
